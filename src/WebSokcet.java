@@ -6,9 +6,9 @@ import java.security.NoSuchAlgorithmException;
 public class WebSokcet {
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        ServerSocket serverSocket = new ServerSocket(80);
+        ServerSocket serverSocket = new ServerSocket(5012);
         try{
-            System.out.println("server started at lovalhost at portt 80");
+            System.out.println("server started at lovalhost at portt 5012");
 
             Socket client = serverSocket.accept();
             System.out.println(client.getInetAddress() + " connected");
